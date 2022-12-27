@@ -1,4 +1,8 @@
 LOG:
 
-12/12/2022:
-chatGPT has possibly created a function that will artificially highlight the text for you. Trying to implement this but also would like to note that it needs to be reviewed.
+12/26/2022: all tabs can be pulled from the window and then presented to the screen in the content.html file.
+next steps include:
+- allow for naming of current window.
+- store details of window in firebase db
+- create html page that allows for users to either save current window or open old archived window
+
