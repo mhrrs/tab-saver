@@ -2,9 +2,8 @@ let myLeads = []
 let windowArchive = {}
 let myUrls = ""
 let name_of_list = ""
-const inputEl = document.getElementById("input-el")
-const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
+const inputEl = document.getElementById("input-btn")
 const archBtn = document.getElementById("archive-btn")
 var currentPage = "popup.html"
 
@@ -13,13 +12,10 @@ var currentPage = "popup.html"
 
 //############### SAVE BUTTON #################
 //submission info regarding Input button for "enter" key
-inputEl.addEventListener("keyup", function(event){
-  if(event.keyCode === 13){
-    inputBtn.click();
+inputEl.addEventListener("click", function(e){
 
     //set input value equal to the name of the window archive, the text inside the input button is then reset to ""
     name_of_list = inputEl.value
-    inputEl.value = ""
 
     //get all tabs open in window and insert into tabURLS array
     chrome.tabs.query({}, function(tabs){
@@ -44,7 +40,7 @@ inputEl.addEventListener("keyup", function(event){
         }
     });
   }
-})
+)
 
 
 
@@ -54,5 +50,7 @@ archBtn.addEventListener('click',function(e){
   window.location = currentPage;
 });
 
+  
+  
+  
 ////////////////////////// NON-BUTTON RELATED/////////////////////////////////////
-

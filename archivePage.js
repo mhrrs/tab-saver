@@ -1,4 +1,4 @@
-//All of the following functions are for the archive page of the extension
+// //All of the following functions are for the archive page of the extension
 
 var currentPage = "archivePage.html"
 
